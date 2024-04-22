@@ -1,0 +1,13 @@
+question: Flowchart Creation - Design a flowchart that outlines the logic for a user login process. It should include conditional paths for successful and unsuccessful login attempts, and a loop that allows a user three attempts before locking the account.
+
+solution:
+[psuedocode]
+
+start:queue
+reached 3 attempts:diamond
+authorized:diamond
+end:queue
+start–>reached 3 attempts-yes->lock account–>alert user–>end
+reached 3 attempts-no->login–>authorized-yes->grant access–>end
+authorized-no->reached 3 attempts
+

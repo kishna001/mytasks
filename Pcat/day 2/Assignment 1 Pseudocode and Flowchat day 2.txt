@@ -1,0 +1,101 @@
+Assignment 1: Pseudocode and Flowchart for Sorting Algorithm - Write pseudocode and create a flowchart for a bubble sort algorithm. Provide a brief explanation of how the algorithm works and a simple array of integers to demonstrate a dry run of your algorithm.
+
+solution:
+for a bubble sort algorithm:
+
+begin
+	for i = 0 to M-1 do
+	for j = 0 to M-1-i do
+	if array[j] > array[j+1] then
+	swap array[j] and array[j+1]
+	end if
+	end for
+	end for
+        end procedure
+
+
+
+Array of integers to demonstrate a dry run of  bubble sort algorithm :
+input:
+
+0	1	2	3	4
+23	10	16	11	20
+After i=0
+
+0	1	2	3	4
+10	16	11	20	23
+After i=1
+
+0	1	2	3	4
+10	11	16	20	23
+After i=2
+
+0	1	2	3	4
+10	11	16	20	23
+After i=3
+
+0	1	2	3	4
+10	11	16	20	23
+After i=4
+
+0	1	2	3	4
+10	11	16	20	23
+
+explanation of how the algorithm works:
+
+We are given with an input array which is supposed to be sorted in ascending order
+We start with the first element and i=0 index and check if the element present at i+1 is greater then we swap the elements at index i and i+1.
+If above is not the case, then no swapping will take place.
+Now  “ i ” gets incremented and the above 2 steps happen again until the array is exhausted.
+We will ignore the last index as it is already sorted.
+Now the largest element will be at the last index of the array.
+Now we will again set i=0 and continue with the same steps that will eventually place second largest at second last place in the array. Now the last 2 indexes of the array are sorted.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bubble Sort algorithm includes the following steps:
+
+1. Set N = Length of Array
+
+2. Array[j] > Array[j + 1] (Decision)
+
+if no - continue with the step 4
+3. Swap Array[j] and Array[j+1]
+
+4. Increment j (j++)
+
+5. j < N - i - 1 (Decision)
+
+if yes - continue with the step 2
+6. Clear j (j = 0)
+
+7. Increment i (i++)
+
+8. i < N - 1 (Decision)
+
+if yes continue with the step 2
+9. Ordered Array

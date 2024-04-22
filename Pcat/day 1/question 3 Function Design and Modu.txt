@@ -1,0 +1,89 @@
+question 3: Function Design and Modularization - Create a document that describes the design of two modular functions: one that returns the factorial of a number, and another that calculates the nth Fibonacci number. Include pseudocode and a brief explanation of how modularity in programming helps with code reuse and organization.
+
+solution:
+
+Pseudocode for Factorial of a number :
+
+Step 1: Declare N and F as integer variable.
+
+Step 2: Initialize F=1.
+
+Step 2: Enter the value of N.
+
+Step 3: Check whether N>0, if not then F=1.
+
+Step 4: If yes then, F=F*N
+
+Step 5: Decrease the value of N by 1 .
+
+Step 6: Repeat step 4 and 5 until N=0.
+
+Step 7: Now print the value of F.
+
+The value of F will be the factorial of N(number).
+
+
+code for fraction number:
+Fact(n)
+Begin
+if n == 1 then
+Return ;
+else
+Return n*Call Fact(n-1);
+end if
+End
+
+
+Pseudocode for nth Fibonacci number :
+Step-1 Start
+
+Step-2 Input Value of N
+
+Step-3 A=0, B=1, COUNT=2
+
+Step-4 WRITE A, B
+
+Step-5 IF (COUNT >N) then go to step 12
+
+Step-6 NEXT= A + B
+
+Step-7 WRITE NEXT
+
+Step-8 A=B
+
+Step-9 B=NEXT
+
+Step-10 COUNT=COUNT + 1
+
+Step-11 Go to step-4
+
+Step-12 Stop
+
+
+algorithm:
+
+if(n==0 or n==1) 
+
+{
+return 1 
+}
+
+return fib(n-1)+fib(n-2);
+
+
+Explanation :
+
+First, we read the value of n.
+
+Line 2: We declare int fib(int).
+
+Line 7: We call the function fib(n).
+
+Line 9: We declare the function.
+
+Line 11–14: If n is 0, we return 0.
+
+Line 15–18: If n is 1 or 2, we return 1.
+
+Line 19: If n is something other than 0, 1, or 2 then we call fib(n-1)+fib(n-2) recursively.
+
