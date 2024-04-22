@@ -1,0 +1,31 @@
+assignment 1 on pcat :
+
+question :Pseudocode Development - Task: Write a detailed pseudocode for a simple program that takes a number as input, calculates the square if it's even or the cube if it's odd, and then outputs the result. Incorporate conditional and looping constructs.
+solution :
+
+(1)
+Take input value from a user
+-Read input number.
+-Then check a user enterd value is even number or odd number.
+-check input number is even
+         (checking even number - input_number%2 == 0)
+          if number is even
+         -calculate the square of the input number.
+             square = input_number * input_number
+         -output -> square number.
+                  
+ (2)            
+          
+start  
+prompt the user to enter a number and store it in a variable
+initialize a variable to store the result
+check if the number is even 
+calculate its square and store in variable
+else
+the number is odd
+calculate its cube and store it in variable
+show the result
+ +result
+
+ 
+             
